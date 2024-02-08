@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    
+    <meta charset="utf-8">
+    <title>Error-Filled Page</title>
+
+</head>
+<body>
+    <h1>Welcome to My Error-Filled Page </h1>
+    
+    <p>This is a paragraph with mismatched tags and missing closing tags.</p>
+    
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
+        <li>Item 9</li>
+        <li>Item 10</li>
+    </ol>
+
+    <p>This is another paragraph without proper indentation.</p>
+    
+    <img src="image.jpg" alt="A meme declaring:'The two states of every
+        programmer: I am a god [and] I have no idea what I'm doing.">
+
+    <a href="https://www.example.com" target="_blank">Example.com (opens in 
+        new tab)</a>
+
+    <table>
+        <caption>Names and Ages</caption>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>30</td>
+        </tr>
+    </table>
+    
+    <img src="error.jpeg" alt="Error Image">
+
+    <p>This is centered text.</p>
+
+    <p>Text</p>
+
+    <input type="button" value="Click me">
+
+    <!-- This is an unclosed comment -->
+
+    <a href="#">Link without closing tag</a>
+
+    <p><em>Underlined text</em></p>
+
+    <dl>
+        <dt>Descriptive Item Title</dt>
+        <dd>Descriptive Item Text</dd>
+    </dl>
+</body>
+</html>
+
+<!-- List of errors:
+    Error 1: <!DOCTYPE html> missing; added at line 1
+    Error 2: <html> element opening tag added a second time in the head;
+        removed and added lang="en-US" to opening tag at line 2
+    Error 3: missing <meta> element for character set; added with utf-8
+        at line 5
+    Error 4: missing closing tag for </head>; added at line 8
+    Error 5: <h1> element missing closing tag; added at line 10
+    Error 6: <p> element missing opening tag; added at line 12
+    Error 7: <ol> element has incorrect closing tag; changed from </ul>
+        to </ol> (unordered list to ordered list) at line 25
+    Error 8: <p> element missing closing tag; added at line 27
+    Error 9: <img> element missing alt text; added at lines 29-30
+    Error 10: <a> element has incorrect closing tag; changed from </img>
+        to </a> (note: this is also an error because <img> is a void 
+        element) (also: changed link text to something more appropriate)
+    Error 11: <table> element has no <caption>; added at line 36
+    Error 12: <td> element closing tag missing '/'; changed second <td>
+        to </td> at line 43
+    Error 13: <table> element missing closing tag; added at line 49
+    Error 14: <img> attribute 'src' incorrectly specified as 'source';
+        changed at line 51
+    Error 15: text included with obsolete <center> element; replaced 
+        with <p> element at line 53
+    Error 16: inappropriate attribute 'bgcolor' specified in <p> element;
+        removed at line 55
+    Error 17: comment left unclosed; added closing tag at line 59
+    Error 18: <a> element has no closing tag; added at line 61
+    Error 19: <p> and <em> element closing tags in wrong order; put 
+        </em> before </p> at line 63
+    Error 20: <dl> elements specified incorrectly; changed first <li>
+        to <dt> at line 66 and second <li> to <dd> at line 67
+-->
