@@ -1,0 +1,54 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #415500;
+    font-family: 'Courier New', Courier, monospace;
+}
+nav{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:20px;
+    background-color: rgb(11, 45, 0);
+}
+nav a{
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    color:whitesmoke;
+}
+a:hover {
+    color: limegreen;
+}
+
+
+img{
+    width: 75vw;
+    height: auto;
+    animation: fadein 6s 2s;
+    margin: 20px;
+}
+
+#red-ball{
+    background-color: greenyellow;
+    width: 20px;
+    height:20px;
+    position: absolute;
+    margin-left: -95%;
+    bottom:0;
+    border-radius: 50%;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0%;
+        display: none;
+    }
+
+    100% {
+        opacity: 100%;
+        display: block;
+    }
+}
