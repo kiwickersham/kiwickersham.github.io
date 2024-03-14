@@ -1,0 +1,139 @@
+/* everything */
+body {
+    background-color: black;
+}
+
+/* site title */
+h1 {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    text-align: center;
+}
+
+/* intro paragraph parent container*/
+.intro {
+    color:whitesmoke;
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+    margin: 20px;
+    font-size: large;
+}
+
+/* intro paragraphs */
+.intro > p {
+    margin: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* main content: events */
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content:center;
+}
+
+/* event container */
+.event {
+    background-color: whitesmoke;
+    padding: 10px;
+    margin: 10px;
+    max-width: 500px;
+}
+
+/* event title */
+.event_title {
+    font-size: x-large;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 15px;
+    border-bottom: solid rgb(67, 67, 67) 2px;
+}
+
+/* event description container*/
+.event_description {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* event date and time */
+.event_datetime {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: large;
+    padding: 10px;
+    border-bottom: solid rgb(67, 67, 67) 2px;
+    text-align: center;
+}
+
+/* additional event info (featured artists and repertoire) */
+.event_info {
+    display:flex;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.event_info > div {
+    max-width: 250px;
+    padding: auto;
+}
+
+/* featured artists */
+.event_info > .featured_artists > ul {
+    list-style: none;
+}
+
+/* repertoire */
+.event_info > .repertoire > ul {
+    list-style: none;
+}
+
+/* repertoire sublist */
+.event_info > .repertoire > ul > ul {
+    list-style: none;
+}
+
+/* featured artists and repertoire box headings */
+.subtitle {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* formatting composer names */
+.composer {
+    font-weight: bold;
+}
+
+/* titles of works and publications */
+.title {
+    font-style: italic;
+}
+
+/* works w/o formal titles */
+.untitle {
+    font-style: oblique;
+}
+
+@media screen and (max-width: 699px) {
+    .intro > p {
+        margin: 10px;
+    }
+    .main {
+        flex-direction: column;
+    }
+    .event_info {
+        flex-direction: column;
+    }
+    .event {
+        font-size: small;
+    }
+    .event_datetime {
+        font-size: small;
+    }
+}
