@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/ica10.css">
+    <title>In-Class Activity 10</title>
+</head>
+<body>
+    <h1>This Site is Interactive!</h1>
+    <button type="button" id="clickthis">Click Me!</button>
+    <button type="button" id="dontclick">Don't Click Me!</button>
+
+    <script>
+        const button = document.getElementById("clickthis");
+        button.addEventListener('click', openThis);
+
+        function openThis() {
+            console.log("Button was clicked!");
+
+            if(button.textContent === "Click Me Again!") {
+                button.textContent = "Click Me!";
+            }
+            else {
+                button.textContent ="Click Me Again!";
+            };
+        };
+
+        const otherbutton = document.getElementById("dontclick");
+        otherbutton.addEventListener('click', errMessage);
+
+        function errMessage() {
+            alert("You weren't supposed to click that!");
+            const h1 = document.querySelector("h1");
+            h1.textContent = "This site is less interactive now :(";
+        };
+    </script>
+</body>
+</html>
