@@ -1,0 +1,17 @@
+/* make sure it works
+body {
+    background-color: yellow;
+} */
+
+.sr-only { /*class selector (vs. tag and id (once per page))*/
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+
+}

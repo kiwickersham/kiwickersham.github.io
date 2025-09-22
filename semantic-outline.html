@@ -1,0 +1,45 @@
+<!DOCTYPE html> <!-- technically not necessary but sends you to the 90s if you forget-->
+<html lang="en"> <!-- booooiiiilllleeeerrplate (do not mess with) -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML Outline Practice</title>
+    <link rel="stylesheet" href="css/semantic-outline.css">
+</head>
+<body>
+    <header>
+        <h1>Semantic HTML5 Outline</h1> <!-- one h1 per page -->
+        <!-- nav can go here, but doesn't need to -->
+    </header>
+    <nav>
+        <h2 class="sr-only">Main Navigation</h2>
+        <!-- shows up for screen readers but not display; no untitleds in outline -->
+        <ul>
+            <li><a href="#lorem-section">LINK 1</a></li> <!-- pound symbol is a dummy link- just reloads page -->
+            <li><a href="#lorem-links">LINK 2</a></li>
+            <li><a href="#">LINK 3</a></li>
+        </ul>
+    </nav>
+    <main> 
+        <section id="lorem-section">
+            <h2>Lorem Ipsum</h2> <!-- every section should have an h2 -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis natus consequatur laboriosam, perspiciatis officiis voluptas quidem! Velit mollitia minima nostrum aliquam, quidem explicabo? Quia nobis nulla placeat blanditiis, accusantium ratione!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam blanditiis reiciendis odit pariatur, quisquam quis, animi voluptatibus atque est ipsa laborum, eveniet nobis officia mollitia vero distinctio veniam magni facilis.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit a, aliquam harum maiores sint voluptatibus, fugiat possimus distinctio deleniti deserunt, exercitationem aperiam labore excepturi id explicabo consequatur eos nam dolore?</p>
+            <figure> <!-- informational image -->
+                <img src="/img/romanstatue.jpg" width="300px" height="400px" alt="A marble statue of a woman in Ancient Roman clothing, with one arm held out towards the viewer.">
+                <figcaption>Roman statue, c. 2 CE</figcaption>
+                <!-- width and height reserves space for slow loading, but this isn't responsive -->
+                <!-- alt tag is relevant to SEO but don't be obnoxious (also no image of)-->
+            </figure> 
+            <aside> <!-- aside to lorem ipsum content (complimentary) -->
+                <h3 id="lorem-links">Lorem ipsum dummy text generators</h3>
+                <ul>
+                    <li><a href="#">LINK 4</a></li>
+                    <li><a href="#">LINK 5</a></li>
+                </ul>
+            </aside>
+        </section>
+    </main>
+</body>
+</html>
